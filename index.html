@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="heading"><b>THINK!</b></div>
+    <div class="hid-card">
+        <div class="card">
+            <div class="question">
+               <b id="qno">Simple Quiz</b>  <div  id="ques"></div>
+            </div>
+            <div class="options">
+                <button id="op1" onclick="lock(1)"></button>
+                <button id="op2" onclick="lock(2)"></button>
+                <button id="op3" onclick="lock(3)"></button>
+                <button id="op4" onclick="lock(4)"></button>
+            </div>
+            <div class="res-box">
+                <div class="result" id="res">Score: 0</div>
+                <button class="next" id="next" onclick="next(); check();">Start</button>
+            </div>
+            <button class="submit" id="submit" onclick="submit()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>    

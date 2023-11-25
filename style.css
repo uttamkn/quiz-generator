@@ -1,0 +1,142 @@
+body {
+    background-image: url(./img/aron-visuals-BXOXnQ26B7o-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+}
+
+.heading {
+    font-size: 80px;
+    font-family: cursive;
+    color: #eee;
+    opacity: 0.8;
+}
+
+.hid-card {
+    /* top: 100%; */
+    position: relative;
+    transition: 400ms 250ms top ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    background-color: grey;
+    border-radius: 32px;
+    border: 1px solid grey;
+    box-shadow: 2px 4px 16px black;
+    opacity: 0.75;
+    gap: 20px;
+    padding: 50px 20px 50px 20px;
+}
+
+body:hover > .hid-card {
+    top: 0;
+}
+
+.question {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    opacity: 1;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#qno {
+    font-size: 55px;
+    opacity: 1;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+    opacity: 1;
+}
+
+.options button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: #eee;
+}
+
+.options button:hover {
+    background-color: rgb(44, 43, 43);
+}
+
+.next {
+    box-sizing: border-box;
+    width: 55px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    margin-left: auto;
+    font-size: 18px;
+    font-family: cursive;
+    margin-right: 15px;
+}
+
+.next:hover {
+    background-color: rgb(44, 43, 43);
+    color: white;
+}
+
+.res-box {
+    display: flex;
+}
+
+.result {
+    background-color: azure;
+    height: 40px;
+    width: 85px;
+    border-radius: 6px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final {
+    font-size: 100px;
+    font-weight: 800;
+    font-family: cursive;
+    color: #eee;
+}
+
+.submit {
+    box-sizing: border-box;
+    width: 85px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    margin-left: auto;
+    font-size: 18px;
+    font-family: cursive;
+    margin: auto;
+}
