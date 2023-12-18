@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
     <title>Quiz</title>
+    <script src="./script.js"></script>
 </head>
 <body>
-    <div class="heading"><b>THINK!</b></div>
-    <div class="hid-card">
-        <div class="card">
+    
+    <div class="heading"><b>Think !</b></div>
+    <div class="menu" id="menu">
+        <img src="./img/Happy-Boy-.svg" alt="guy">
+        <div class="maxques">
+            <div class="txt">Ready to test your knowledge? Answer as many questions as you dare! How many questions do you want to tackle today?</div>
+            <div class="qnoinput"><input id="maxq" type="number"><button id="start-button" onclick="takeInput()">Start</button></div>
+        </div>    
+    </div>
+        <div class="card hide">
             <div class="question">
                <b id="qno">Simple Quiz</b>  <div  id="ques"></div>
             </div>
@@ -22,10 +29,9 @@
             </div>
             <div class="res-box">
                 <div class="result" id="res">Score: 0</div>
-                <button class="next" id="next" onclick="next(); check();">Start</button>
+                <button class="next" id="next" onclick="check(); next2();">Next</button>
             </div>
             <button class="submit" id="submit" onclick="submit()">Submit</button>
         </div>
-    </div>
 </body>
-</html>    
+</html>
