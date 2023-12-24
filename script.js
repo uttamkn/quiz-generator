@@ -55,7 +55,7 @@ function lock(selectedOption) {
 // const fetch = require('node-fetch');
 
 const apiBase = "https://api.endpoints.anyscale.com/v1";
-const token = "Your-token";
+const token = "YSour-token";
 const url = `${apiBase}/chat/completions`;
 var apiResponse;
 
