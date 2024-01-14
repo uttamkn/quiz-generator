@@ -77,7 +77,7 @@ function next() {
    document.getElementById("op4").style.backgroundColor="#eee";
 
    qno++;
-   document.getElementById("qno").innerHTML="Question "+qno+":";
+   document.getElementById("qno").innerText="Question "+qno+":";
 
 
    fetch(url, {
@@ -100,7 +100,7 @@ function check() {
       if (myArr[y] == myArr[5].substring(8)) {
           res += 10;
       }
-      document.getElementById("res").innerHTML = "Score: " + res;
+      document.getElementById("res").innerText = "Score: " + res;
   } else {
       console.error("WARNING: myArr is undefined or has insufficient elements.");
   }
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Display the "res" value on the page
   var finalScoreElement = document.getElementById('final-score');
   if (finalScoreElement && finalScore !== null) {
-      finalScoreElement.innerHTML = "Final score: " + finalScore;
+      finalScoreElement.innerText = "Final score: " + finalScore;
   }
 });
 
